@@ -2,6 +2,7 @@ import json
 from typing import Dict, Optional
 import httpx
 import os
+import asyncio
 from dotenv import load_dotenv
 from .models import InputSchema, SelectorMap
 
@@ -28,7 +29,7 @@ class LLMSelectorInference:
         # Create DOM sketch - lightweight preprocessing
         from .dom_sketch import make_dom_sketch
         
-        sketch_html, metadata = make_dom_sketch(html_sample, max_items=5, max_text=80)
+        sketch_html, metadata = make_dom_sketch(html_sample, max_items=5, max_text=120)
         
         print(f"DOM sketch: {metadata.get('type', 'unknown')} structure")
         print(f"Found {metadata.get('count', 0)} items")
@@ -36,19 +37,24 @@ class LLMSelectorInference:
         
         prompt = self._build_prompt(sketch_html, schema, url, metadata)
         
+        max_retries = 5
+        base_delay = 2
+        
         async with httpx.AsyncClient(timeout=60.0) as client:
-            response = await client.post(
-                self.base_url,
-                headers={
-                    "Authorization": f"Bearer {self.api_key}",
-                    "Content-Type": "application/json"
-                },
-                json={
-                    "model": "gpt-4-turbo-preview",
-                    "messages": [
-                        {
-                            "role": "system",
-                            "content": """You are an expert web scraping analyst with deep knowledge of HTML structures, CSS selectors, and directory patterns.
+            for attempt in range(max_retries):
+                try:
+                    response = await client.post(
+                        self.base_url,
+                        headers={
+                            "Authorization": f"Bearer {self.api_key}",
+                            "Content-Type": "application/json"
+                        },
+                        json={
+                            "model": "gpt-4-turbo-preview",
+                            "messages": [
+                                {
+                                    "role": "system",
+                                    "content": """You are an expert web scraping analyst with deep knowledge of HTML structures, CSS selectors, and directory patterns.
 
 You understand:
 - Table-based directories (government sites, databases, member systems)
@@ -67,17 +73,37 @@ You MUST:
 5. Return valid JSON only
 
 You are extremely thorough and always provide selectors that work."""
-                        },
-                        {
-                            "role": "user",
-                            "content": prompt
+                                },
+                                {
+                                    "role": "user",
+                                    "content": prompt
+                                }
+                            ],
+                            "temperature": 0.1,
+                            "response_format": {"type": "json_object"}
                         }
-                    ],
-                    "temperature": 0.1,
-                    "response_format": {"type": "json_object"}
-                }
-            )
-            response.raise_for_status()
+                    )
+                    response.raise_for_status()
+                    break
+                
+                except httpx.HTTPStatusError as e:
+                    if e.response.status_code == 429:
+                        if attempt < max_retries - 1:
+                            delay = base_delay * (2 ** attempt)
+                            print(f"Rate limited by OpenAI. Retrying in {delay}s... (attempt {attempt + 1}/{max_retries})")
+                            await asyncio.sleep(delay)
+                            continue
+                        else:
+                            print(f"\nOpenAI Rate Limit Error:")
+                            print(f"  Status: 429 Too Many Requests")
+                            print(f"  This can happen if:")
+                            print(f"    1. Your account has billing issues")
+                            print(f"    2. You're on free tier with very low limits")
+                            print(f"    3. OpenAI is having service issues")
+                            print(f"\n  Check: https://platform.openai.com/settings/organization/limits")
+                            raise
+                    else:
+                        raise
             
             result = response.json()
             content = result["choices"][0]["message"]["content"]

@@ -1,0 +1,13 @@
+{
+  "name": "Student's full name",
+  "program": "PhD program or specialization",
+  "year": "Year started or current year in program",
+  "advisor": "Faculty advisor or PI",
+  "email": "Student email address",
+  "research_interests": "Research areas and interests",
+  "education": "Previous degrees and institutions",
+  "publications": "List of publications or research output",
+  "awards": "Academic awards and honors",
+  "bio": "Biography or research description"
+}
+
