@@ -46,17 +46,6 @@ Options:
   --api-key TEXT            OpenAI API key (or use OPENAI_API_KEY env var)
 ```
 
-#### `test` - Test selector inference
-
-```bash
-python -m scraper test <url> [OPTIONS]
-
-Options:
-  --schema, -s PATH          Path to JSON schema file
-  --schema-json, -j TEXT     Inline JSON schema string
-  --api-key TEXT            OpenAI API key
-```
-
 ### This program can run both in code as well
 
 ### Code Version Example
