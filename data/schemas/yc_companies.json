@@ -1,0 +1,10 @@
+{
+  "company_name": "name of the startup/company",
+  "tagline": "one-line description of what the company does",
+  "batch": "YC batch (e.g., W23, S24)",
+  "industry": "company industry or category",
+  "location": "company location/headquarters",
+  "company_url": "link to company website",
+  "profile_url": "link to YC profile page"
+}
+

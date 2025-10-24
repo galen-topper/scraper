@@ -1,0 +1,12 @@
+{
+  "phone": "phone number",
+  "email": "email address",
+  "website": "website URL",
+  "office_location": "office location in San Diego",
+  "areas_of_focus": "specializations and areas of practice",
+  "insurance": "insurance providers accepted",
+  "populations_served": "populations served (e.g., Adults, Children)",
+  "license_number": "California license number",
+  "credentials": "degrees and certifications"
+}
+

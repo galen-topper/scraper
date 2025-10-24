@@ -1,0 +1,16 @@
+{
+  "name": "name of the nursing care facility",
+  "address": "street address of the facility",
+  "city": "city location",
+  "state": "state (PA)",
+  "zip_code": "zip code",
+  "phone": "phone number",
+  "ownership_type": "type of ownership (e.g., PROFIT, NON-PROFIT)",
+  "licensure_status": "licensure status (e.g., REGULAR)",
+  "last_inspection": "date of last inspection",
+  "facility_size": "size category (e.g., Small, Medium, Large)",
+  "number_of_beds": "total number of beds",
+  "payment_options": "accepted payment methods (e.g., Private Payment, Medicare, Medicaid)",
+  "nursing_hours_per_resident": "nursing hours per resident per day"
+}
+

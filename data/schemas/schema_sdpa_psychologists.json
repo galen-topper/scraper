@@ -1,0 +1,15 @@
+{
+  "name": "psychologist's full name",
+  "photo_url": "URL to profile photo",
+  "areas_of_focus": "areas of specialization and practice (e.g., Anxiety Disorders, Depression, PTSD)",
+  "office_location": "office location(s) in San Diego County",
+  "insurance": "insurance providers accepted",
+  "populations_served": "populations served (e.g., Adults, Children, Couples)",
+  "phone": "contact phone number",
+  "email": "email address",
+  "website": "practice website URL",
+  "license_number": "California psychology license number",
+  "credentials": "degrees and certifications (e.g., PhD, PsyD)",
+  "telehealth": "whether telehealth services are offered"
+}
+

@@ -1,0 +1,470 @@
+[
+  {
+    "name": "ASBURY HEALTH CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/13/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "139",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.68"
+  },
+  {
+    "name": "BALDWIN HEALTH CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "5/22/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "200",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.19"
+  },
+  {
+    "name": "BRIDGEVILLE REHABILITATION & CARE CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/11/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "194",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.39"
+  },
+  {
+    "name": "BURGH CARE CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "6/10/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "126",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.25"
+  },
+  {
+    "name": "CANTERBURY PLACE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/2/2025",
+    "facility_size": "Small",
+    "number_of_beds": "115",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.98"
+  },
+  {
+    "name": "CARING HEIGHTS COMMUNITY CARE AND REHABILITATION CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/8/2025",
+    "facility_size": "Small",
+    "number_of_beds": "119",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.05"
+  },
+  {
+    "name": "CARNEGIE PARK POST ACUTE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/12/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "180",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.39"
+  },
+  {
+    "name": "CEDAR HILL HEALTHCARE AND REHABILITATION CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/28/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "150",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.35"
+  },
+  {
+    "name": "CONCORDIA AT REBECCA RESIDENCE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "7/7/2025",
+    "facility_size": "Small",
+    "number_of_beds": "60",
+    "payment_options": "Private PaymentMedicare",
+    "nursing_hours_per_resident": "3.6"
+  },
+  {
+    "name": "CONCORDIA AT THE CEDARS",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/20/2025",
+    "facility_size": "Small",
+    "number_of_beds": "59",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.7"
+  },
+  {
+    "name": "CONCORDIA OF THE SOUTH HILLS",
+    "licensure_status": "REGULAR",
+    "last_inspection": "5/5/2025",
+    "facility_size": "Small",
+    "number_of_beds": "46",
+    "payment_options": "Private PaymentMedicare",
+    "nursing_hours_per_resident": "4.38"
+  },
+  {
+    "name": "CORNER VIEW NURSING AND REHABILITATION CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/13/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "187",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.19"
+  },
+  {
+    "name": "EAST END HEALTH & REHAB CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/12/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "144",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.39"
+  },
+  {
+    "name": "ELDERCREST REHABILITATION & HEALTHCARE CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/27/2025",
+    "facility_size": "Small",
+    "number_of_beds": "48",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.04"
+  },
+  {
+    "name": "FRIENDSHIP VILLAGE OF SOUTH HILLS",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/12/2025",
+    "facility_size": "Small",
+    "number_of_beds": "89",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.8"
+  },
+  {
+    "name": "HARMAR VILLAGE HEALTH & REHAB CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/26/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "130",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.21"
+  },
+  {
+    "name": "HARMONY HILLS HEALTHCARE AND REHABILITATION CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/3/2025",
+    "facility_size": "Small",
+    "number_of_beds": "55",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "4.04"
+  },
+  {
+    "name": "HARMONY PHYSICAL REHABILITATION",
+    "licensure_status": "REGULAR",
+    "last_inspection": "4/15/2025",
+    "facility_size": "Small",
+    "number_of_beds": "30",
+    "payment_options": "Private PaymentMedicare",
+    "nursing_hours_per_resident": "4.35"
+  },
+  {
+    "name": "HERITAGE CARE CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/10/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "143",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.32"
+  },
+  {
+    "name": "HIGHLAND HILLS POST ACUTE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/5/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "200",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.35"
+  },
+  {
+    "name": "IVY PARK POST ACUTE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/3/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "150",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.38"
+  },
+  {
+    "name": "JOHN J KANE REGIONAL CENTER - GLEN HAZEL",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/7/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "255",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "4.18"
+  },
+  {
+    "name": "JOHN J KANE REGIONAL CENTER- MCKEESPORT",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/5/2025",
+    "facility_size": "Large",
+    "number_of_beds": "360",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "4.15"
+  },
+  {
+    "name": "JOHN J KANE REGIONAL CENTER- ROSS TOWNSHIP",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/4/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "240",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "4.21"
+  },
+  {
+    "name": "JOHN J KANE REGIONAL CENTER- SCOTT TOWNSHIP",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/9/2025",
+    "facility_size": "Large",
+    "number_of_beds": "311",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "4.65"
+  },
+  {
+    "name": "KADIMA REHABILITATION & NURSING AT CHESWICK",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/27/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "121",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.24"
+  },
+  {
+    "name": "LGAR HEALTH & REHABILITATION CTR",
+    "licensure_status": "REGULAR",
+    "last_inspection": "5/5/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "120",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.59"
+  },
+  {
+    "name": "LITTLE SISTERS OF THE POOR",
+    "licensure_status": "REGULAR",
+    "last_inspection": "6/24/2025",
+    "facility_size": "Small",
+    "number_of_beds": "48",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "5.77"
+  },
+  {
+    "name": "LONGWOOD AT OAKMONT",
+    "licensure_status": "REGULAR",
+    "last_inspection": "7/31/2025",
+    "facility_size": "Small",
+    "number_of_beds": "60",
+    "payment_options": "Private PaymentMedicare",
+    "nursing_hours_per_resident": "4.68"
+  },
+  {
+    "name": "MASONIC VILLAGE AT SEWICKLEY",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/4/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "128",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "4.34"
+  },
+  {
+    "name": "MEADOWCREST REHABILITATION & HEALTHCARE CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/3/2025",
+    "facility_size": "Small",
+    "number_of_beds": "50",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.37"
+  },
+  {
+    "name": "MONROEVILLE POST ACUTE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/4/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "131",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.21"
+  },
+  {
+    "name": "PLATINUM RIDGE CENTER FOR REHABILITATION AND HEALING",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/12/2025",
+    "facility_size": "Small",
+    "number_of_beds": "97",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.61"
+  },
+  {
+    "name": "PROVIDENCE POINT HEALTHCARE RESIDENCE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/14/2025",
+    "facility_size": "Small",
+    "number_of_beds": "42",
+    "payment_options": "Private PaymentMedicare",
+    "nursing_hours_per_resident": "4.53"
+  },
+  {
+    "name": "REFORMED PRESBYTERIAN HOME",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/20/2025",
+    "facility_size": "Small",
+    "number_of_beds": "58",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.66"
+  },
+  {
+    "name": "REHABILITATION CENTER AT JEFFERSON HILLS, THE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/14/2025",
+    "facility_size": "Small",
+    "number_of_beds": "50",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.4"
+  },
+  {
+    "name": "RIVERSIDE HEALTH & REHAB CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/9/2025",
+    "facility_size": "Small",
+    "number_of_beds": "119",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.38"
+  },
+  {
+    "name": "SENECA PLACE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/11/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "174",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.68"
+  },
+  {
+    "name": "SOUTH HILLS POST ACUTE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/14/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "160",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.4"
+  },
+  {
+    "name": "SOUTHWESTERN NURSING AND REHABILITATION CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "7/16/2025",
+    "facility_size": "Small",
+    "number_of_beds": "118",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.3"
+  },
+  {
+    "name": "SOUTHWESTERN VETERANS CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "7/1/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "236",
+    "payment_options": "Private PaymentMedicaid",
+    "nursing_hours_per_resident": "3.74"
+  },
+  {
+    "name": "SPRING HILL REHABILITATION AND NURSING CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/3/2025",
+    "facility_size": "Small",
+    "number_of_beds": "100",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "2.85"
+  },
+  {
+    "name": "SQUIRREL HILL WELLNESS AND REHABILITATION CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "7/23/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "178",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.58"
+  },
+  {
+    "name": "ST. BARNABAS NURSING HOME",
+    "licensure_status": "REGULAR",
+    "last_inspection": "3/20/2025",
+    "facility_size": "Small",
+    "number_of_beds": "119",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.88"
+  },
+  {
+    "name": "UPMC MAGEE-WOMENS HOSPITAL TRANSITIONAL CARE UNIT",
+    "licensure_status": "REGULAR",
+    "last_inspection": "2/19/2025",
+    "facility_size": "Small",
+    "number_of_beds": "20",
+    "payment_options": "Private PaymentMedicare",
+    "nursing_hours_per_resident": "5.82"
+  },
+  {
+    "name": "VINCENTIAN HOME",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/7/2025",
+    "facility_size": "Small",
+    "number_of_beds": "106",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "4.22"
+  },
+  {
+    "name": "WECARE AT MONROEVILLE REHABILITATION AND NURSING CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/8/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "120",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.02"
+  },
+  {
+    "name": "WECARE AT MT LEBANON REHABILITATION AND NURSING CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/9/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "121",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.31"
+  },
+  {
+    "name": "WEXFORD HEALTHCARE CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/20/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "182",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.56"
+  },
+  {
+    "name": "WHITEHALL BOROUGH POST ACUTE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/5/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "166",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.62"
+  },
+  {
+    "name": "WILLOWS OF PRESBYTERIAN SENIORCARE",
+    "licensure_status": "REGULAR",
+    "last_inspection": "8/11/2025",
+    "facility_size": "Medium",
+    "number_of_beds": "193",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.47"
+  },
+  {
+    "name": "WOODHAVEN HEALTH & REHAB CENTER",
+    "licensure_status": "REGULAR",
+    "last_inspection": "9/3/2025",
+    "facility_size": "Small",
+    "number_of_beds": "119",
+    "payment_options": "Private PaymentMedicareMedicaid",
+    "nursing_hours_per_resident": "3.2"
+  }
+]

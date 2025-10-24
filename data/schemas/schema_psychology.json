@@ -1,0 +1,11 @@
+{
+  "name": "psychologist's full name",
+  "specialty": "area of specialization or practice (e.g., Clinical Psychology, Child Psychology)",
+  "phone": "contact phone number",
+  "email": "email address",
+  "address": "office address or location",
+  "website": "personal or practice website URL",
+  "credentials": "degrees and certifications (e.g., PhD, PsyD, Licensed Psychologist)",
+  "bio": "brief biography or description of practice"
+}
+
