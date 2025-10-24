@@ -83,7 +83,7 @@ class DirectoryScraper:
             initial_html = response.text
             
             if verbose:
-                print("🤖 Inferring selectors with LLM (enhanced prompting)...")
+                print("Inferring selectors with LLM (enhanced prompting)...")
             
             selector_map = await self.llm.infer_selectors(
                 initial_html,
@@ -93,9 +93,9 @@ class DirectoryScraper:
             
             if verbose:
                 print(f"Selectors inferred")
-                print(f"  List item: {selector_map.list_item_selector or 'N/A'}")
-                print(f"  Pagination: {selector_map.pagination_selector or 'N/A'}")
-                print(f"  Field selectors:")
+                print(f"List item: {selector_map.list_item_selector or 'N/A'}")
+                print(f"Pagination: {selector_map.pagination_selector or 'N/A'}")
+                print(f"Field selectors:")
                 for field, selector in selector_map.selectors.items():
                     print(f"    - {field}: {selector}")
             
@@ -137,7 +137,7 @@ class DirectoryScraper:
                     page_count += 1
                 
                 if verbose and page_count > 1:
-                    print(f"  Pages scraped: {page_count}, Records: {len(all_records)}")
+                    print(f"Pages scraped: {page_count}, Records: {len(all_records)}")
             
             if verbose:
                 print(f"Scraping complete: {len(all_records)} records from {page_count} pages")
@@ -169,7 +169,7 @@ class DirectoryScraper:
             initial_html = await browser.get_html(url, wait_for=self.wait_for_selector, scroll_for_lazy_load=True)
             
             if verbose:
-                print("🤖 Inferring selectors with LLM (enhanced prompting)...")
+                print("Inferring selectors with LLM...")
             
             selector_map = await self.llm.infer_selectors(
                 initial_html,
