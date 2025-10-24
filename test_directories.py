@@ -1,6 +1,5 @@
 """
-Comprehensive test suite for directory scraper.
-Tests multiple directory types to ensure LLM-based extraction works correctly.
+Testing CORE for all directories. However, due to OPENAI rate limiting, it doesn't really work since we get limited before all can run. 
 """
 
 import asyncio

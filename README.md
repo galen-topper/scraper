@@ -1,15 +1,6 @@
 # Directory Scraper
 
-A generalized, high-performance directory scraper that uses LLM-assisted selector inference to extract structured data from any web directory.
-
-## Features
-
-- 🤖 **LLM-Powered**: Uses GPT-4 to automatically infer CSS selectors from HTML
-- ⚡ **High Performance**: Async/await architecture with concurrent requests
-- 🔄 **Pagination Support**: Automatically detects and follows pagination links
-- 🎯 **Schema-Based**: Extract any fields you define via a simple schema
-- 🧹 **Data Cleaning**: Automatic normalization and validation of extracted data
-- 🌐 **Generalized**: Works across different directory structures
+A generalized directory scraper that uses an LLM to define the selectors used to extract data from almost any web directory.
 
 ## Installation
 
@@ -30,36 +21,12 @@ Create a JSON file in `data/schemas/` (e.g., `data/schemas/my_schema.json`) desc
 
 ```json
 {
-  "name": "person's full name",
-  "title": "their job title or position",
-  "email": "contact email address",
-  "page_url": "link to their profile page",
-  "bio": "short biography"
+  "name": "",
+  "title": "",
+  "email": "",
+  "page_url": "",
+  "bio": "",
 }
-```
-
-### Run the Scraper
-
-```bash
-python -m scraper run https://example.com/directory \
-  --schema data/schemas/my_schema.json \
-  --output data/outputs/results.json
-```
-
-Or use inline schema:
-
-```bash
-python -m scraper run https://example.com/directory \
-  --schema-json '{"name": "person name", "email": "email address"}' \
-  --output data/outputs/results.json
-```
-
-### Test Selector Inference
-
-Before scraping, test if the LLM can properly infer selectors:
-
-```bash
-python -m scraper test https://example.com/directory --schema data/schemas/my_schema.json
 ```
 
 ## Usage
@@ -90,7 +57,9 @@ Options:
   --api-key TEXT            OpenAI API key
 ```
 
-### Programmatic Usage
+### This program can run both in code as well
+
+### Code Version Example
 
 ```python
 import asyncio
@@ -105,7 +74,6 @@ schema = InputSchema(fields={
 scraper = DirectoryScraper(schema=schema, max_pages=10)
 result = asyncio.run(scraper.scrape("https://example.com/directory"))
 
-# Access records as dictionaries
 for record in result.as_dicts:
     print(record)
 ```
@@ -119,77 +87,6 @@ for record in result.as_dicts:
 5. **Concurrent Scraping**: Processes multiple pages in parallel for speed
 6. **Data Cleaning**: Normalizes emails, URLs, and text fields
 
-## Architecture
 
-```
-scraper/
-├── __init__.py       # Package exports
-├── __main__.py       # Module entry point
-├── main.py           # Typer CLI interface
-├── models.py         # Pydantic schemas
-├── llm.py            # GPT-4 selector inference
-├── parser.py         # HTML parsing & extraction
-└── core.py           # Main orchestration & pagination
-```
 
-## Configuration
-
-### Environment Variables
-
-- `OPENAI_API_KEY`: Your OpenAI API key (required)
-
-### Scraper Options
-
-```python
-DirectoryScraper(
-    schema=schema,           # InputSchema defining fields to extract
-    api_key=None,           # OpenAI API key (or from env)
-    max_pages=50,           # Maximum pages to scrape
-    max_concurrent=5        # Concurrent page requests
-)
-```
-
-## Examples
-
-### Stanford Faculty Directory
-
-```bash
-python -m scraper run https://profiles.stanford.edu/bioengineering \
-  --schema-json '{
-    "name": "faculty name",
-    "title": "academic position",
-    "email": "contact email",
-    "page_url": "profile page URL"
-  }' \
-  --output data/outputs/stanford_faculty.json
-```
-
-### Generic Contact Directory
-
-```bash
-python -m scraper run https://example.com/contacts \
-  --schema-json '{
-    "name": "contact name",
-    "phone": "phone number",
-    "address": "physical address"
-  }' \
-  --max-pages 20
-```
-
-## Performance
-
-- **LLM Call**: Once per site/schema combination
-- **Scraping Speed**: ~5-10 pages/second with concurrency
-- **Memory**: Efficient streaming, minimal overhead
-
-## Limitations
-
-- Requires OpenAI API access
-- May not work with JavaScript-heavy SPAs (use Playwright/Selenium for those)
-- Pagination detection may fail on unusual patterns
-- Rate limiting depends on target site
-
-## License
-
-MIT
 
