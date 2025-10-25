@@ -46,17 +46,6 @@ Options:
   --api-key TEXT            OpenAI API key (or use OPENAI_API_KEY env var)
 ```
 
-#### `test` - Test selector inference
-
-```bash
-python -m scraper test <url> [OPTIONS]
-
-Options:
-  --schema, -s PATH          Path to JSON schema file
-  --schema-json, -j TEXT     Inline JSON schema string
-  --api-key TEXT            OpenAI API key
-```
-
 ### This program can run both in code as well
 
 ### Code Version Example
@@ -81,11 +70,10 @@ for record in result.as_dicts:
 ## How It Works
 
 1. **Fetch Initial Page**: Downloads the first page of the directory
-2. **LLM Inference**: Sends HTML sample to GPT-4 to infer optimal CSS selectors
-3. **Parse & Extract**: Uses inferred selectors to extract structured data
-4. **Pagination**: Automatically detects and follows "next page" links
+2. **LLM Inference**: Sends a temporary sample to GPT-4.1, generating the correct selectors. 
+3. **Parse & Extract**: Parse using selectors to extract structured data
+4. **Pagination**: Automatically detects and follows "next page" links, allowing us to go 1 level deeper. 
 5. **Concurrent Scraping**: Processes multiple pages in parallel for speed
-6. **Data Cleaning**: Normalizes emails, URLs, and text fields
 
 
 
